@@ -6,7 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MagicOnion.Server" Version="4.2.0" />
+    <ProjectReference Include="..\Interface\Interface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MagicOnion" Version="2.1.2" />
+    <PackageReference Include="MagicOnion.Hosting" Version="2.1.2" />
   </ItemGroup>
 
 </Project>

@@ -5,8 +5,14 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+
   <ItemGroup>
-    <PackageReference Include="MagicOnion.Client" Version="4.2.0" />
+    <ProjectReference Include="..\Interface\Interface.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="MagicOnion" Version="2.1.2" />
   </ItemGroup>
 
 </Project>
