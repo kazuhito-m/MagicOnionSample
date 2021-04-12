@@ -4,10 +4,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{2854AED1-A147-4FBA-A5BF-45ED4F5C4A39}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48747195-416C-4831-BB0C-6977098AF2A7} = {48747195-416C-4831-BB0C-6977098AF2A7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{1A6DCCA0-F399-4E35-B148-61F73268FD9D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48747195-416C-4831-BB0C-6977098AF2A7} = {48747195-416C-4831-BB0C-6977098AF2A7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{48747195-416C-4831-BB0C-6977098AF2A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C27279C0-7D21-4AFB-812D-88CB42C84EF8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
