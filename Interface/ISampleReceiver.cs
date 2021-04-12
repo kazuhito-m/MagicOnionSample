@@ -1,6 +1,4 @@
-﻿using System.Numerics;
-
-namespace Interface
+﻿namespace Interface
 {
     public interface ISampleReceiver
     {
