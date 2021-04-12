@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Grpc.Core;
-using MagicOnion.Client;
 using Interface;
-using System.Net.Http;
+using MagicOnion.Client;
 
 namespace Client
 {
@@ -13,6 +12,7 @@ namespace Client
         {
             // AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
 
+            //var channel = GrpcChannel.ForAddress("https://localhost:12345");
             var channel = new Channel("localhost", 12345, ChannelCredentials.Insecure);
             var client = StreamingHubClient.Connect<ISampleHub, ISampleReceiver>(channel, new SampleReceiver());
 
@@ -36,7 +36,6 @@ namespace Client
             await client.DisposeAsync();
             Console.WriteLine("ShutdownAsync()");
             await channel.ShutdownAsync();
-            client = null;
             Console.WriteLine("プログラム終了！");
         }
     }

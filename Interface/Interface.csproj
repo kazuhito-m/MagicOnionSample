@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MagicOnion" Version="2.1.2" />
+    <PackageReference Include="MagicOnion" Version="3.0.13" />
   </ItemGroup>
 
 
